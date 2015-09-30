@@ -1,1 +1,149 @@
-/* Add your CSS here */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #6a6969;
+    margin: 7px;
+}
+/*Header formatting*/
+header{
+    width: 1000px;
+    height: 72px;
+    background-color: #fffabe;
+    display: inline-block;
+    font-size: 16px;
+    color: #515151;
+}
+header div{
+    display: inline-block;
+}
+#logo{
+    margin: 20px 40px;
+}
+#navigation{
+    text-align: center;
+}
+#navigation li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+}
+#navigation li:hover{
+    color: #d42551;
+}
+/* Main content formatting */
+#welcome_information{
+    width: 1000px;
+    box-sizing: border-box;
+}
+#whitespace{
+    height: 120px;
+    width: 187px;
+}
+.section_head{
+    font-size: 20px;
+    margin:40px 0;
+}
+#macarons_image {
+    float: left;
+    display: inline-block;
+    margin-left: 30px;
+}
+#main_content{
+    float: right;
+    display: inline-block;
+    width: 740px;
+    margin: 20px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+/* Weekday flavor box formatting */
+#weekday_boxes{
+    width: 1000px;
+    height: 140px;
+    clear: both;
+    line-height: 10px;
+}
+.day_box{
+    width: 126px;
+    height: 140px;
+    display: inline-block;
+    margin: 0 6px;
+    box-sizing: border-box;
+    background-color: #fffabe;
+}
+.day_time{
+    height: 58px;
+    padding: 8px;
+    /* total height of 74px */
+}
+.time{
+    font-size: 12px;
+}
+.top_flavor, .bottom_flavor{
+    display: inline-block;
+    width: 126px;
+    height: 33px;
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.flavor{
+    float: left;
+    padding: 10px 6px;
+    margin: 0;
+}
+.flavor_img{
+    float: right;
+    padding: 6px;
+}
+#monday{
+    margin-left: 11px;
+}
+#sunday{
+    margin-right: 11px;
+}
+#monday .bottom_flavor{
+    background-color: #824603;
+    color: #ffffff;
+}
+#wednesday .bottom_flavor{
+    background-color: #df5277;
+    color: #ffffff;
+}
+#friday .bottom_flavor{
+    background-color: #a2304e;
+    color: #ffffff;
+}
+#sunday .bottom_flavor{
+    background-color: #c39005;
+    color: #ffffff;
+}
+/* Footer formatting */
+footer{
+    width: 1000px;
+    height: 80px;
+    background-color: #df5277;
+    color: #ffffff;
+}
+#foot_whitespace{
+    height: 60px;
+}
+#contact_information{
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+}
+#contact_information li{
+    display: inline-block;
+    list-style-type: none;
+    width:170px;
+    margin: 20px 60px 0px 60px;
+}
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#copywright{
+    font-size: 11px;
+    text-align: center;
+}
