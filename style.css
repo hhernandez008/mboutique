@@ -42,7 +42,7 @@ header div{
 #macarons_image {
     float: left;
     position: relative;
-    top: 120px;
+    top: 140px;
     display: inline-block;
     margin-left: 30px;
 }
@@ -118,13 +118,12 @@ header div{
 }
 /* Footer formatting */
 footer{
+    position: relative;
+    top: 40px;
     width: 1000px;
     height: 80px;
     background-color: #df5277;
     color: #ffffff;
-}
-#foot_whitespace{
-    height: 60px;
 }
 #contact_information{
     font-size: 12px;
@@ -141,7 +140,7 @@ footer{
     margin-left: 10px;
     margin-right: 10px;
 }
-#copywright{
+#copyright{
     font-size: 11px;
     text-align: center;
 }
