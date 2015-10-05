@@ -82,7 +82,6 @@ span{
     /* linked to our-macarons-background image on Learning Fuze github account */
     background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/our-macarons-background.png?token=ALHWMLKtHZimY7BPFAk-ht8oZ7zWYFn8ks5WG3uowA%3D%3D");
 }
-
 /* Main content - gift_parties.html */
 #gift_parties_content{
     /* linked to our-macarons-background image on Learning Fuze github account */
@@ -91,6 +90,53 @@ span{
 #party_tower{
     width: 550px;
 }
+/* Main content - contact.html */
+#contact{
+    height: 500px;
+}
+#store_info{
+    width: 30%;
+    height: 80%;
+    margin: 0 2%;
+    display: inline-block;
+}
+#store_info ul{
+    list-style-type: none;
+    padding: 0;
+}
+#contact_form {
+    width: 30%;
+    height: 80%;
+    margin: 0 2%;
+    display: inline-block;
+    position: relative;
+    top: 4%;
+}
+#contact_form .section_head{
+    margin: 20px 0;
+}
+#contact_form input, textarea{
+    width: 100%;
+    height: 35px;
+    margin: 2% 0;
+    padding: 0 1%;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+#contact_form textarea{
+    height: 70px;
+}
+#contact_form input:last-of-type{
+    width: 40%;
+    float: right;
+}
+#macarons_pop_image{
+    display: inline-block;
+    position: relative;
+    top: -2%;
+    margin: 0 2%;
+}
+
 /* Weekday flavor boxes - index.html */
 #weekday_boxes{
     width: 1000px;
@@ -184,3 +230,193 @@ footer{
     font-size: 11px;
     text-align: center;
 }
+/* Breakpoints for phone screen - iPhone 6 width=375px*/
+@media screen and (max-width: 375px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #6a6969;
+        margin: 0;
+    }
+    /*Main Content - All pages */
+    .section_head{
+        font-size: 170%;
+        margin: 20% 0;
+    }
+    /*Float formatting - All pages */
+    .left_side{
+        float: none;
+    }
+    .right_side{
+        float: none;
+    }
+    /*Header - All pages*/
+    header{
+        width: 1000px;
+        height: 72px;
+        background-color: #fffabe;
+        display: inline-block;
+        font-size: 16px;
+        color: #515151;
+    }
+    header div{
+        display: inline-block;
+    }
+    #logo{
+        margin: 20px 40px;
+    }
+    #navigation{
+        text-align: center;
+    }
+    #navigation li{
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 20px;
+    }
+    #navigation li:hover{
+        color: #d42551;
+    }
+    /* Main content - index.html*/
+    #welcome_information{
+        width: 1000px;
+        box-sizing: border-box;
+    }
+    #macarons_solid_image {
+        position: relative;
+        top: 140px;
+        left: 30px;
+    }
+    #home_body_content{
+        width: 740px;
+        margin: 20px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    /* Main content - our_macarons.html, gifts_parties.html, contact.html */
+    .main_content{
+        height: 600px;
+        width: 1000px;
+        padding: 0 7px;
+    }
+    .main_content>p{
+        padding: 0 7px;
+    }
+    body>p{
+        width: 1000px;
+        padding: 0 7px;
+        margin: 0;
+    }
+    /* Marks email addresses */
+    span{
+        color: #df5277;
+    }
+
+    /* Main content - our_macarons.html */
+    #our_macarons_content{
+        /* linked to our-macarons-background image on Learning Fuze github account */
+        background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/our-macarons-background.png?token=ALHWMLKtHZimY7BPFAk-ht8oZ7zWYFn8ks5WG3uowA%3D%3D");
+    }
+
+    /* Main content - gift_parties.html */
+    #gift_parties_content{
+        /* linked to our-macarons-background image on Learning Fuze github account */
+        background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/gifts-parties-background.png?token=ALHWMMwraA34dHNfDqCRC8aDYTT7rwj7ks5WHABzwA%3D%3D");
+    }
+    #party_tower{
+        width: 550px;
+    }
+    /* Weekday flavor boxes - index.html */
+    #weekday_boxes{
+        width: 1000px;
+        height: 140px;
+        clear: both;
+        line-height: 10px;
+    }
+    .day_box{
+        width: 126px;
+        height: 140px;
+        display: inline-block;
+        margin: 0 6px;
+        box-sizing: border-box;
+        background-color: #fffabe;
+    }
+    .day_time{
+        height: 58px;
+        padding: 8px;
+        /* total height of 74px */
+    }
+    .time{
+        clear: both;
+        font-size: 12px;
+    }
+    .top_flavor, .bottom_flavor{
+        display: inline-block;
+        width: 126px;
+        height: 33px;
+        font-size: 12px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .flavor{
+        float: left;
+        padding: 10px 6px;
+        margin: 0;
+    }
+    .flavor_img{
+        float: right;
+        padding: 6px;
+    }
+    #monday{
+        margin-left: 11px;
+    }
+    #sunday{
+        margin-right: 11px;
+    }
+    #monday .bottom_flavor{
+        background-color: #824603;
+        color: #ffffff;
+    }
+    #wednesday .bottom_flavor{
+        background-color: #df5277;
+        color: #ffffff;
+    }
+    #friday .bottom_flavor{
+        background-color: #a2304e;
+        color: #ffffff;
+    }
+    #sunday .bottom_flavor{
+        background-color: #c39005;
+        color: #ffffff;
+    }
+    /* End Weekday boxes */
+
+    /* Footer - All pages */
+    footer{
+        position: relative;
+        bottom: -40px;
+        width: 1000px;
+        height: 80px;
+        background-color: #df5277;
+        color: #ffffff;
+    }
+    #contact_information{
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+    }
+    #contact_information li{
+        display: inline-block;
+        list-style-type: none;
+        width:170px;
+        margin: 20px 60px 0 60px;
+    }
+    .icon{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #copyright{
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
