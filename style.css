@@ -59,14 +59,12 @@ header div{
     box-sizing: border-box;
 }
 /* Main content - our_macarons.html */
-#macaron_background{
-    position: absolute;
-    z-index: -1;
-}
 #our_macarons_content{
     height: 500px;
     width: 1000px;
     padding: 0 7px;
+    /* linked to our-macarons-background image on Learning Fuze github account */
+    background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/our-macarons-background.png?token=ALHWMLKtHZimY7BPFAk-ht8oZ7zWYFn8ks5WG3uowA%3D%3D")
 }
 #our_macarons_content>p{
     padding: 0 7px;
