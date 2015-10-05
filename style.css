@@ -52,21 +52,19 @@ header div{
     top: 140px;
     left: 30px;
 }
-#main_content{
+#home_body_content{
     width: 740px;
     margin: 20px;
     padding: 0 30px;
     box-sizing: border-box;
 }
-/* Main content - our_macarons.html */
-#our_macarons_content{
-    height: 500px;
+/* Main content - our_macarons.html, gifts_parties.html, contact.html */
+.main_content{
+    height: 600px;
     width: 1000px;
     padding: 0 7px;
-    /* linked to our-macarons-background image on Learning Fuze github account */
-    background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/our-macarons-background.png?token=ALHWMLKtHZimY7BPFAk-ht8oZ7zWYFn8ks5WG3uowA%3D%3D")
 }
-#our_macarons_content>p{
+.main_content>p{
     padding: 0 7px;
 }
 body>p{
@@ -74,7 +72,25 @@ body>p{
     padding: 0 7px;
     margin: 0;
 }
+/* Marks email addresses */
+span{
+    color: #df5277;
+}
 
+/* Main content - our_macarons.html */
+#our_macarons_content{
+    /* linked to our-macarons-background image on Learning Fuze github account */
+    background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/our-macarons-background.png?token=ALHWMLKtHZimY7BPFAk-ht8oZ7zWYFn8ks5WG3uowA%3D%3D");
+}
+
+/* Main content - gift_parties.html */
+#gift_parties_content{
+    /* linked to our-macarons-background image on Learning Fuze github account */
+    background-image: url("https://raw.githubusercontent.com/Learning-Fuze/mboutique/master/assets/images/gifts-parties-background.png?token=ALHWMMwraA34dHNfDqCRC8aDYTT7rwj7ks5WHABzwA%3D%3D");
+}
+#party_tower{
+    width: 550px;
+}
 /* Weekday flavor boxes - index.html */
 #weekday_boxes{
     width: 1000px;
@@ -138,9 +154,9 @@ body>p{
     background-color: #c39005;
     color: #ffffff;
 }
+/* End Weekday boxes */
 
-
-/* Footer formatting - All pages */
+/* Footer - All pages */
 footer{
     position: relative;
     bottom: -40px;
