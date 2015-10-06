@@ -34,6 +34,13 @@ header div{
 #navigation{
     text-align: center;
 }
+#navigation a{
+    text-decoration: none;
+    color: #515151;
+}
+#navigation a:hover{
+    color: #d42551;
+}
 #navigation li{
     display: inline-block;
     list-style-type: none;
