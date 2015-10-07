@@ -5,6 +5,22 @@ body{
     color: #6a6969;
     margin: 7px;
 }
+/* Marks email addresses */
+span{
+    color: #df5277;
+}
+/*Main Content Section */
+.section_head{
+    font-size: 20px;
+    margin:40px 0;
+}
+/*Float formatting - All pages */
+.left_side{
+    float: left;
+}
+.right_side {
+    float: right;
+}
 /*Header - All pages*/
 header{
     width: 1000px;
@@ -17,39 +33,57 @@ header{
 header div{
     display: inline-block;
 }
-#logo{
+.logo{
     margin: 20px 40px;
 }
-#navigation{
+.navigation{
     text-align: center;
 }
-#navigation a{
+.navigation a{
     text-decoration: none;
     color: #515151;
 }
-#navigation a:hover{
+.navigation a:hover{
     color: #d42551;
 }
-#navigation li{
+.navigation li{
     display: inline-block;
     list-style-type: none;
     margin: 0 20px;
 }
-#navigation li:hover{
+.navigation li:hover{
     color: #d42551;
 }
-/*Main Content Section */
-.section_head{
-    font-size: 20px;
-    margin:40px 0;
+/* end Header */
+/* Footer - All pages */
+footer{
+    position: relative;
+    bottom: -40px;
+    width: 1000px;
+    height: 80px;
+    background-color: #df5277;
+    color: #ffffff;
 }
-/*Float formatting - All pages */
-.left_side{
-    float: left;
+.contact_information{
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
 }
-.right_side{
-    float: right;
+.contact_information li{
+    display: inline-block;
+    list-style-type: none;
+    width:170px;
+    margin: 20px 60px 0 60px;
 }
+.icon{
+    margin: 0 10px;
+}
+.copyright{
+    font-size: 11px;
+    text-align: center;
+}
+/*end Footer*/
+
 
 /* Main content - index.html*/
 #welcome_information{
@@ -81,10 +115,6 @@ body>p{
     padding: 0 7px;
     margin: 0;
 }
-/* Marks email addresses */
-span{
-    color: #df5277;
-}
 
 /* Main content - our_macarons.html */
 #our_macarons_content{
@@ -111,6 +141,7 @@ span{
     list-style-type: none;
     padding: 0;
 }
+/* Contact form - contact.html */
 #contact_form {
     width: 30%;
     height: 80%;
@@ -129,14 +160,22 @@ span{
     padding: 0 1%;
     box-sizing: border-box;
     background-color: #f5f5f5;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
 }
 #contact_form textarea{
     height: 70px;
 }
+/* Submit Button */
 #contact_form input:last-of-type{
     width: 40%;
     float: right;
+    color: inherit;
+    text-transform: uppercase;
 }
+/* end Contact Form */
 #macarons_pop_image{
     display: inline-block;
     position: relative;
@@ -207,48 +246,19 @@ span{
     background-color: #c39005;
     color: #ffffff;
 }
-/* End Weekday boxes */
+/* end Weekday boxes */
 
-/* Footer - All pages */
-footer{
-    position: relative;
-    bottom: -40px;
-    width: 1000px;
-    height: 80px;
-    background-color: #df5277;
-    color: #ffffff;
-}
-#contact_information{
-    font-size: 12px;
-    text-align: center;
-    padding: 0;
-}
-#contact_information li{
-    display: inline-block;
-    list-style-type: none;
-    width:170px;
-    margin: 20px 60px 0 60px;
-}
-.icon{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-#copyright{
-    font-size: 11px;
-    text-align: center;
-}
+
 /* Breakpoints for phone screen - iPhone 6 width=375px*/
 @media screen and (max-width: 375px){
     body{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        color: #6a6969;
         margin: 0;
     }
+
     /*Main Content - All pages */
     .section_head{
         font-size: 170%;
-        margin: 20% 0;
+        margin: 10% 0;
     }
     /*Float formatting - All pages */
     .left_side{
@@ -259,122 +269,97 @@ footer{
     }
     /*Header - All pages*/
     header{
-        width: 1000px;
-        height: 72px;
-        background-color: #fffabe;
-        display: inline-block;
-        font-size: 16px;
-        color: #515151;
+        width: 100%;
+        height: 10%;
+        font-size: 80%;
     }
-    header div{
-        display: inline-block;
+    .logo{
+        display: block;
+        margin: 2% auto;
     }
-    #logo{
-        margin: 20px 40px;
-    }
-    #navigation{
-        text-align: center;
-    }
-    #navigation li{
-        display: inline-block;
-        list-style-type: none;
-        margin: 0 20px;
-    }
-    #navigation li:hover{
-        color: #d42551;
-    }
-
-    /* Main content - our_macarons.html, gifts_parties.html, contact.html */
-    .main_content{
-        height: 600px;
-        width: 1000px;
-        padding: 0 7px;
-    }
-    .main_content>p{
-        padding: 0 7px;
-    }
-    body>p{
-        width: 1000px;
-        padding: 0 7px;
+    .navigation{
+        width: 100%;
         margin: 0;
     }
-    /* Marks email addresses */
-    span{
-        color: #df5277;
+    .navigation ul{
+        padding: 0;
+    }
+    .navigation li{
+        margin: 0 1%;
+    }
+    .head_img{
+        width: 100%;
+    }
+    /* end Header */
+    /* Footer - All pages */
+    footer{
+        width: 100%;
+        height: 25%;
+    }
+    .contact_information{
+        font-size: 95%;
+        padding: 1% 0;
+        margin: 0;
+    }
+    .contact_information li{
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 1%;
+    }
+    .icon{
+        margin: 2% 2% 0 2%;
+    }
+    .copyright{
+        margin: 2% 0;
+        font-size: 92%;
+    }
+    /* end Footer */
+    /* Main content - our_macarons.html, gifts_parties.html, contact.html */
+    .main_content{
+        width: 100%;
+        padding: 0;
+        margin-left: 10%;
+    }
+    .main_content>p{
+        padding: 0;
+    }
+    body>p{
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     /* Main content - contact.html */
     #contact{
         width: 100%;
+        height: auto;
     }
     #store_info{
         width: 90%;
-        margin: 0 2%;
     }
     #store_info ul{
         list-style-type: none;
         padding: 0;
     }
+    /* Contact form - contact.html*/
     #contact_form {
-        width: 30%;
-        height: 80%;
-        margin: 0 2%;
-        display: inline-block;
-        position: relative;
-        top: 4%;
+        width: 85%;
     }
     #contact_form .section_head{
-        margin: 20px 0;
+        margin: 10% 0;
     }
     #contact_form input, textarea{
-        width: 100%;
-        height: 35px;
-        margin: 2% 0;
-        padding: 0 1%;
-        box-sizing: border-box;
-        background-color: #f5f5f5;
+        width: 90%;
+        padding: 0 2%;
     }
     #contact_form textarea{
-        height: 70px;
+        height: 20vh;
     }
-    #contact_form input:last-of-type{
-        width: 40%;
-        float: right;
-    }
+    /*end Contact Form
+    /* Should be removed when in mobile view */
     #macarons_pop_image{
-        display: inline-block;
-        position: relative;
-        top: -2%;
-        margin: 0 2%;
-    }
+        display: none;
 
-    /* Footer - All pages */
-    footer{
-        position: relative;
-        bottom: -40px;
-        width: 1000px;
-        height: 80px;
-        background-color: #df5277;
-        color: #ffffff;
-    }
-    #contact_information{
-        font-size: 12px;
-        text-align: center;
-        padding: 0;
-    }
-    #contact_information li{
-        display: inline-block;
-        list-style-type: none;
-        width:170px;
-        margin: 20px 60px 0 60px;
-    }
-    .icon{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #copyright{
-        font-size: 11px;
-        text-align: center;
     }
 }
-
+/*end Breakpoint screen and max-width: 375px*/

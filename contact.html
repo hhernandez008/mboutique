@@ -8,10 +8,8 @@
 <body>
     <!-- Website header for all pages. -->
     <header>
-        <div id="logo">
-            <img src="assets/images/logo.png">
-        </div>
-        <div id="navigation">
+        <img class="logo" src="assets/images/logo.png">
+        <div class="navigation">
             <ul>
                 <li>
                     <a href="index.html">
@@ -39,7 +37,7 @@
     </header>
     <!-- Header image - Different for each page -->
     <div>
-        <img src="assets/images/contact-image.png">
+        <img class="head_img" src="assets/images/contact-image.png">
     </div>
     <!-- End Website header -->
     <!-- Main Content -->
@@ -90,9 +88,8 @@
                 <input type="text" name="email_address" placeholder="Email">
                 <input type="text" name="phone_number" placeholder="Phone">
                 <input type="text" name="subject"   placeholder="Subject">
-                <textarea placeholder="Message">
-                </textarea>
-                <input type="submit" name="Send">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send">
             </form>
         </div><!-- End #contact_form -->
         <!-- Macarons pop image -->
@@ -103,7 +100,7 @@
 
     <!-- Website footer for all pages. -->
     <footer>
-        <ul id="contact_information">
+        <ul class="contact_information">
             <li>
                 <img class="icon" src="assets/images/mail.png"> order@mboutique.com
             </li>
@@ -116,7 +113,7 @@
                 <img class="icon" src="assets/images/twitter.png">
             </li>
         </ul>
-        <p id="copyright">
+        <p class="copyright">
             Copyright &copy 2015 MBoutique. All rights reserved.
         </p>
     </footer>
