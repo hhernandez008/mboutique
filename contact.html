@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Website header for all pages. -->
-    <header>
+    <header class="row">
         <div class="logo">
             <img src="assets/images/logo.png">
         </div>
@@ -51,62 +51,67 @@
     </div>
     <!-- End Website header -->
     <!-- Main Content -->
-    <div id="contact" class="main_content">
-        <div id="store_info">
-            <p class="section_head">
-               Visit us!
-            </p>
-            <ul>
-                <li>
-                    Monday &#45<!-- '-' --> Friday &#124<!-- vertical bar --> 10am &#45<!-- '-' --> 9pm
-                </li>
-                <li>
-                    Saturday &#124<!-- vertical bar --> 10am &#45<!-- '-' --> 8pm
-                </li>
-                <li>
-                    Sunday &#124<!-- vertical bar --> 11am &#45<!-- '-' --> 7pm
-                </li>
-                <li>
-                    Closed Thanksgiving Day, Christmas Day, and Easter Day
-                </li>
-            </ul>
-            <p>
-                1625 Post St
-            </p>
-            <p>
-                San Francisco, CA 94115
-            </p>
-            <p>
-                949.800&#45<!-- '-' -->3111
-            </p>
-            <p>
-                <span>
-                    order@mboutique.com
-                </span>
-            </p>
-            <p>
-                Send your questions, comments and flavor suggestions or place an order!
-            </p>
-        </div> <!-- End #store_info -->
-        <!-- Contact Form -->
-        <div id="contact_form" class="main_content">
-            <p class="section_head">
-                Contact Form
-            </p>
-            <form action="http://learningfuze.com/echo.php" method="post">
-                <input type="text" name="customer_name" placeholder="Name">
-                <input type="text" name="email_address" placeholder="Email">
-                <input type="text" name="phone_number" placeholder="Phone">
-                <input type="text" name="subject"   placeholder="Subject">
-                <textarea name="message" placeholder="Message"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div><!-- End #contact_form -->
-        <!-- Macarons pop image -->
-        <div id="macarons_pop_image">
-            <img src="assets/images/macarons-image.png">
-        </div>
-    </div> <!-- End #contact .main_content -->
+        <div class="row main_content">
+            <div id="store_info" class="col-xs-offset-1 col-xs-10 col-sm-4">
+                <p class="section_head">
+                   Visit us!
+                </p>
+                <ul>
+                    <li>
+                        Monday &#45<!-- '-' --> Friday &#124<!-- vertical bar --> 10am &#45<!-- '-' --> 9pm
+                    </li>
+                    <li>
+                        Saturday &#124<!-- vertical bar --> 10am &#45<!-- '-' --> 8pm
+                    </li>
+                    <li>
+                        Sunday &#124<!-- vertical bar --> 11am &#45<!-- '-' --> 7pm
+                    </li>
+                    <li>
+                        Closed Thanksgiving Day, Christmas Day, and Easter Day
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        1625 Post St
+                    <li>
+                    <li>
+                        San Francisco, CA 94115
+                    </li>
+                </ul>
+                <p>
+                    949.800&#45<!-- '-' -->3111
+                </p>
+                <p>
+                    <span>
+                        order@mboutique.com
+                    </span>
+                </p>
+                <p>
+                    Send your questions, comments and flavor suggestions or place an order!
+                </p>
+            </div> <!-- End #store_info -->
+
+            <!-- Contact Form -->
+            <div id="contact_form" class="col-xs-offset-1 col-xs-10 col-sm-4">
+                <p class="section_head">
+                    Contact Form
+                </p>
+                <form action="http://learningfuze.com/echo.php" method="post">
+                    <input type="text" name="customer_name" placeholder="Name">
+                    <input type="text" name="email_address" placeholder="Email">
+                    <input type="text" name="phone_number" placeholder="Phone">
+                    <input type="text" name="subject"   placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <div id="submit">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div><!-- End #contact_form -->
+            <!-- Macarons pop image -->
+            <div id="macarons_pop_image" class="hidden-xs col-sm-4">
+                <img src="assets/images/macarons-image.png">
+            </div>
+        </div> <!-- End #contact .main_content -->
 
     <!-- Website footer for all pages. -->
     <footer>
