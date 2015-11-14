@@ -70,6 +70,9 @@ span{
     text-decoration: none;
     color: #515151;
 }
+.nav>li>a:hover {
+     background-color: transparent;
+}
 .navigation a:active, .navigation a:hover{
     color: #d42551;
 }
@@ -124,7 +127,7 @@ footer{
     border: none;
 }
 #contact_form textarea{
-    height: 20vw;
+    height: 10vh;
     resize: none;
 }
 /* Submit Button */
@@ -151,14 +154,53 @@ footer{
 
 /* fill full screen */
 @media screen and (min-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .navbar{
+        text-align: left;
+        height: 72px;
+    }
+    .navbar-brand{
+        padding-bottom: 15px;
+    }
+    .navigation{
+        width: 75%;
+        font-size: 130%;
+        margin: auto;
 
+    }
+    .navbar-nav{
+        width: 100%;
+        /*height: 72px;*/
+        vertical-align: middle;
+    }
+    /*.logo{*/
+        /*display: inline-block;*/
+    /*}*/
+
+    .main_content{
+        display: flex;
+    }
+    .section_head{
+        margin: 15% 0;
+    }
+
+    /* Contact.html */
+    #macarons_pop_image{
+        margin: auto;
+        text-align: center;
+    }
 }
 
 /* centered section with increasing white space */
 @media screen and (min-width: 1000px){
     /* General - All pages */
+    .container{
+        width: 1000px;
+    }
     /*Main Content Section */
-    #store_info .section_head{
+    .section_head, #store_info>.section_head{
         font-size: 20px;
         margin:40px 0;
     }
@@ -167,14 +209,14 @@ footer{
         width: 1000px;
         height: 72px;
         font-size: 16px;
-        text-align: left;
+        /*text-align: left;*/
     }
     .logo{
-        display: inline-block;
+        /*display: inline-block;*/
         margin: 20px 40px;
     }
     .navigation{
-        width: 75%;
+        width: 80%;
     }
     .navigation li{
         margin: 0 20px;
@@ -268,20 +310,14 @@ footer{
     #contact_form textarea{
         height: 70px;
     }
-    #contact_form .section_head{
-        margin: 20px 0;
-    }
-    #contact_form input, textarea{
+    #contact_form>input, textarea{
         width: 100%;
         height: 35px;
     }
 
 
     /* end Contact Form */
-    #macarons_pop_image{
-        text-align: center;
-        margin-top: 5%;
-    }
+
 
     /* Weekday flavor boxes - index.html */
     #weekday_boxes{
