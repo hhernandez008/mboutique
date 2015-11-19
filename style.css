@@ -22,7 +22,7 @@ span{
 /*Main Content - All pages */
 .section_head{
     font-size: 170%;
-    margin: 10% 0;
+    margin: 30px 0;
 }
 .container{
     padding: 0;
@@ -146,19 +146,26 @@ footer{
 /* Phone screens max 768px */
 
 /* For increase in font size*/
-@media screen and (min-width: 667px){
+@media screen and (min-width: 670px){
     nav{
         font-size: 100%;
     }
     /* Our_Macarons.html */
     #flavor_list{
         background-image: url("assets/images/our-macarons-background.png");
-        /*background-repeat: no-repeat;*/
-        /*background-clip: border-box;*/
         background-position: right bottom;
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+    }
+    /* Gift_Parties.html */
+    #gift_parties{
+        background-image: url("assets/images/gifts-parties-background.png");
+        background-position: right -20%;
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
     }
 }
+
 
 /* fill full screen */
 @media screen and (min-width: 768px){
@@ -208,7 +215,23 @@ footer{
     .row{
         display: flex;
     }
-
+    .main_content{
+        font-size: 14px;
+    }
+    .section_head{
+        font-size: 20px;
+    }
+    #flavor_list{
+        background-size: 100%;
+    }
+    #flavor_list > ul{
+        margin-left: 0;
+    }
+    /* Gift_Parties.html */
+    #gift_parties{
+        background-position: right bottom;
+        background-size: 100%;
+    }
     /* Contact.html */
     #macarons_pop_image{
         margin: auto;
@@ -310,13 +333,8 @@ footer{
         margin: 0;
     }
 
-    /* Main content - gift_parties.html */
-    #gift_parties_content{
-        background-image: url("assets/images/gifts-parties-background.png");
-    }
-    #party_tower{
-        width: 550px;
-    }
+
+
     /* Main content - contact.html */
     #store_info{
         height: 80%;
