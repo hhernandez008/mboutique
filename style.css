@@ -102,7 +102,10 @@ footer{
 }
 /* end Footer */
 
-
+/* Our_Macarons.html */
+#flavor_list > ul{
+    margin-left: 5%;
+}
 /* Contact.html */
 #store_info>p{
     margin: 1.5em 0;
@@ -146,6 +149,14 @@ footer{
 @media screen and (min-width: 667px){
     nav{
         font-size: 100%;
+    }
+    /* Our_Macarons.html */
+    #flavor_list{
+        background-image: url("assets/images/our-macarons-background.png");
+        /*background-repeat: no-repeat;*/
+        /*background-clip: border-box;*/
+        background-position: right bottom;
+        background-size: cover;
     }
 }
 
@@ -197,11 +208,7 @@ footer{
     .row{
         display: flex;
     }
-    /* Our Macarons.html*/
-    #flavorDisplay{
-        max-width: 100%;
-        max-height: 100%;
-    }
+
     /* Contact.html */
     #macarons_pop_image{
         margin: auto;
