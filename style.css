@@ -1,12 +1,3 @@
-/*BOOTSTRAP BODY DEFAULTS
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
-}*/
-
 /* General - All pages */
 body{
     width: 100%;
@@ -120,7 +111,6 @@ footer{
     margin: 1.5em 0;
 }
 /* Contact form - contact.html*/
-
 #contact_form input, textarea{
     width: 100%;
     padding: 1%;
@@ -142,18 +132,84 @@ footer{
     width: 25%;
     color: inherit;
     text-transform: uppercase;
-
-
 }
 /*end Contact Form
 
-/* Phone screens max 768px */
+/* Weekday flavor boxes - index.html */
+#dailyFlavor{
+    width: 100%;
+    min-height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.day_box{
+    /* bootstrap col formatting */
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 10px;
+    width: 130px;
+    height: 140px;
+    display: inline-block;
+    margin: 8px;
+    background-color: #fffabe;
+    font-size: 12px;
+}
+.day_time{
+    height: 49px;
+    margin: 12px;
+}
+.day{
+    font-size: 14px;
+}
+.top_flavor, .bottom_flavor{
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 33px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 0 6px;
+    margin: 0;
+}
+.flavor{
+    float: left;
+    padding: 10px 6px;
+    margin: 0;
+}
+.flavor_img{
+    float: right;
+    padding: 6px;
+}
+#monday .bottom_flavor{
+    background-color: #824603;
+    color: #ffffff;
+}
+#wednesday .bottom_flavor{
+    background-color: #df5277;
+    color: #ffffff;
+}
+#friday .bottom_flavor{
+    background-color: #a2304e;
+    color: #ffffff;
+}
+#sunday .bottom_flavor{
+    background-color: #c39005;
+    color: #ffffff;
+}
+/* end Weekday boxes */
 
+/* Phone screens max 768px */
 /* For increase in font size*/
-@media screen and (min-width: 670px){
-    nav{
+@media screen and (min-width: 500px){
+    .navbar{
         font-size: 100%;
     }
+}
+/* for background image display */
+@media screen and (min-width: 670px){
     /* Our_Macarons.html */
     #flavor_list{
         background-image: url("assets/images/our-macarons-background.png");
@@ -170,11 +226,17 @@ footer{
     }
 }
 
-
 /* fill full screen */
 @media screen and (min-width: 768px){
+    /* General - All pages */
     .container{
         width: 100%;
+    }
+    .main_content{
+        font-size: 14px;
+    }
+    .section_head{
+        font-size: 20px;
     }
     /* Navigation */
     .navbar{
@@ -215,13 +277,12 @@ footer{
     }
     /* END Navigation */
 
-
-    .main_content{
-        font-size: 14px;
+    /* Index.html & Contact.html */
+    .macarons_pop_image{
+        margin: auto;
+        text-align: center;
     }
-    .section_head{
-        font-size: 20px;
-    }
+    /* Our_Macarons.html */
     #flavor_list{
         background-size: 100%;
     }
@@ -234,10 +295,6 @@ footer{
         background-size: 100%;
     }
 
-    .macarons_pop_image{
-        margin: auto;
-        text-align: center;
-    }
     /* Contact.html */
     .contact_information {
         font-size: 12px;
@@ -245,9 +302,22 @@ footer{
     .copyright{
         font-size: 11px;
     }
-}
 
-/* centered section with increasing white space */
+    /* Weekday flavor boxes - index.html */
+    #dailyFlavor{
+        margin: 0;
+    }
+    .day_box{
+        width: 126px;
+        margin: 8px 6px;
+    }
+    .top_flavor, .bottom_flavor{
+        width: 126px;
+    }
+    /* end Weekday boxes */
+} /* END min-width: 768px
+
+/* centered section with increasing white space on left & right */
 @media screen and (min-width: 1000px){
     /* General - All pages */
     .container{
@@ -263,31 +333,19 @@ footer{
         width: 1000px;
         height: 72px;
         font-size: 16px;
-        /*text-align: left;*/
     }
     .logo{
-        /*display: inline-block;*/
         margin: 20px 40px;
     }
-    /*.navigation{*/
-        /*width: 80%;*/
-    /*}*/
     .navigation li{
         font-size: 16px;
     }
     .head_img{
         width: 1000px;
     }
-
     /* end Header */
-    /* Footer - All pages */
-    footer{
-        position: relative;
-        bottom: -40px;
-        width: 1000px;
-        height: 80px;
 
-    }
+    /* Footer - All pages */
     .contact_information{
         font-size: 12px;
         padding: 0;
@@ -301,131 +359,8 @@ footer{
     }
     /*end Footer*/
 
-
-    /* Main content - index.html*/
-    #welcome_information{
-        width: 1000px;
-        box-sizing: border-box;
-    }
-    #macarons_solid_image {
-        position: relative;
-        top: 140px;
-        left: 30px;
-    }
-    #home_body_content{
-        width: 740px;
-        margin: 20px;
-        padding: 0 30px;
-        box-sizing: border-box;
-    }
     /* Main content - our_macarons.html, gifts_parties.html, contact.html */
-    .main_content{
-        width: 1000px;
-    }
-    .main_content>p{
-        padding: 0 7px;
-    }
-    body>p{
-        width: 1000px;
-        padding: 0 7px;
-        margin: 0;
-    }
     .container-fluid {
-        margin: 0;
+        margin: 0 auto;
     }
-
-
-
-    /* Main content - contact.html */
-    #store_info{
-        height: 80%;
-        display: inline-block;
-    }
-    #store_info ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    /* Contact form - contact.html */
-    #contact_form {
-        height: 80%;
-        display: inline-block;
-        position: relative;
-        top: 4%;
-    }
-    #contact_form textarea{
-        height: 70px;
-    }
-    #contact_form>input, textarea{
-        width: 100%;
-        height: 35px;
-    }
-
-
-    /* end Contact Form */
-
-
-    /* Weekday flavor boxes - index.html */
-    #weekday_boxes{
-        width: 1000px;
-        height: 140px;
-        clear: both;
-        line-height: 10px;
-    }
-    .day_box{
-        width: 126px;
-        height: 140px;
-        display: inline-block;
-        margin: 0 6px;
-        box-sizing: border-box;
-        background-color: #fffabe;
-    }
-    .day_time{
-        height: 58px;
-        padding: 8px;
-        /* total height of 74px */
-    }
-    .time{
-        clear: both;
-        font-size: 12px;
-    }
-    .top_flavor, .bottom_flavor{
-        display: inline-block;
-        width: 126px;
-        height: 33px;
-        font-size: 12px;
-        box-sizing: border-box;
-        margin: 0;
-    }
-    .flavor{
-        float: left;
-        padding: 10px 6px;
-        margin: 0;
-    }
-    .flavor_img{
-        float: right;
-        padding: 6px;
-    }
-    #monday{
-        margin-left: 11px;
-    }
-    #sunday{
-        margin-right: 11px;
-    }
-    #monday .bottom_flavor{
-        background-color: #824603;
-        color: #ffffff;
-    }
-    #wednesday .bottom_flavor{
-        background-color: #df5277;
-        color: #ffffff;
-    }
-    #friday .bottom_flavor{
-        background-color: #a2304e;
-        color: #ffffff;
-    }
-    #sunday .bottom_flavor{
-        background-color: #c39005;
-        color: #ffffff;
-    }
-    /* end Weekday boxes */
-}
+} /* END min-width: 1000px */
