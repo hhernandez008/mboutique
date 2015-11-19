@@ -20,6 +20,10 @@ span{
     color: #df5277;
 }
 /*Main Content - All pages */
+/* set row height to that of largest column*/
+.row{
+    display: flex;
+}
 .section_head{
     font-size: 170%;
     margin: 30px 0;
@@ -211,10 +215,7 @@ footer{
     }
     /* END Navigation */
 
-    /* set row height to that of largest column*/
-    .row{
-        display: flex;
-    }
+
     .main_content{
         font-size: 14px;
     }
@@ -232,12 +233,12 @@ footer{
         background-position: right bottom;
         background-size: 100%;
     }
-    /* Contact.html */
-    #macarons_pop_image{
+
+    .macarons_pop_image{
         margin: auto;
         text-align: center;
     }
-
+    /* Contact.html */
     .contact_information {
         font-size: 12px;
     }
