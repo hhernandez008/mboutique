@@ -147,7 +147,7 @@ footer{
 
 /* For increase in font size*/
 @media screen and (min-width: 667px){
-    header{
+    nav{
         font-size: 100%;
     }
 }
@@ -157,31 +157,50 @@ footer{
     .container{
         width: 100%;
     }
+    /* Navigation */
     .navbar{
         text-align: left;
         height: 72px;
+        font-size: 100%;
     }
+    /* navigation container */
+    .navbar>.container-fluid{
+        display: table;
+        width: 100%;
+    }
+    /* logo container */
+    .navbar-header {
+        width: auto;
+        display: table-cell;
+    }
+    /* logo */
     .navbar-brand{
+        float: left;
         padding-bottom: 15px;
     }
+    /* Nav Links container */
     .navigation{
-        width: 75%;
-        font-size: 130%;
-        margin: auto;
-
+        display: table-cell;
     }
-    .navbar-nav{
+    .navigation ul {
+        display: table-row;
         width: 100%;
-        /*height: 72px;*/
-        vertical-align: middle;
     }
-    /*.logo{*/
-        /*display: inline-block;*/
-    /*}*/
+    .navigation li{
+        width: 20%;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .nav>li>a{
+        padding: 15px 0;
+    }
+    /* END Navigation */
 
+    /* set row height to that of largest column*/
     .main_content{
         display: flex;
     }
+    /* section headers */
     .section_head{
         margin: 15% 0;
     }
@@ -190,6 +209,13 @@ footer{
     #macarons_pop_image{
         margin: auto;
         text-align: center;
+    }
+
+    .contact_information {
+        font-size: 12px;
+    }
+    .copyright{
+        font-size: 11px;
     }
 }
 
@@ -215,11 +241,11 @@ footer{
         /*display: inline-block;*/
         margin: 20px 40px;
     }
-    .navigation{
-        width: 80%;
-    }
+    /*.navigation{*/
+        /*width: 80%;*/
+    /*}*/
     .navigation li{
-        margin: 0 20px;
+        font-size: 16px;
     }
     .head_img{
         width: 1000px;
