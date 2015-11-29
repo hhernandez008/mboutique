@@ -11,10 +11,7 @@ span{
     color: #df5277;
 }
 /*Main Content - All pages */
-/* set row height to that of largest column*/
-.row{
-    display: flex;
-}
+
 .section_head{
     font-size: 170%;
     margin: 30px 0;
@@ -48,6 +45,9 @@ span{
 }
 .nav>li>a{
     padding: 0 1px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
 }
 .navigation ul{
     padding: 0;
@@ -210,6 +210,10 @@ footer{
 }
 /* for background image display */
 @media screen and (min-width: 670px){
+    /* set row height to that of largest column*/
+    .row{
+        display: flex;
+    }
     /* Our_Macarons.html */
     #flavor_list{
         background-image: url("assets/images/our-macarons-background.png");
